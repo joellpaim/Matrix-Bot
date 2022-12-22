@@ -11,7 +11,7 @@ class Mbot():
         self.programa()
     
     def faz_janela(self):
-        os.system('cls')
+        os.system('clear')
         sg.theme('DarkBlue')
             
         layout = [[sg.Text('Matrix Bot V0.5')],
@@ -45,7 +45,7 @@ class Mbot():
 
                 # Salva o arquivo
                 df.to_excel(r'Final.xlsx', sheet_name='Receber', index = False)
-                os.system('cls')
+                os.system('clear')
                 #print("\n")
                 info.update("Arquivo salvo com sucesso! ☺")
                 #print("*" * 30, "\n")
@@ -74,7 +74,7 @@ class Mbot():
 
             if eventos == 'SAI' or eventos == 'Sair': #Eventos que fecham a janela
                 janela.close()
-                os.system('cls')
+                os.system('clear')
                 break
             
             elif eventos == '-INI-': 
